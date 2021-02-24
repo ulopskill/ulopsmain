@@ -17,14 +17,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index']);
+
+
+
 Auth::routes();
 
-Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
+Route::post('/tutor_register_continue', 'App\Http\Controllers\Auth\RegisterController@tutor_create');
+Route::get('/tutor_register', 'App\Http\Controllers\Auth\RegisterController@tutor_reg_index');
 
 Route::group(['middleware' => 'auth'], function () {
+
+Route::get('/classes', [App\Http\Controllers\HomeController::class, 'classes']);
+
+Route::get('/payments', [App\Http\Controllers\HomeController::class, 'payments']);
+
+
 		Route::get('icons', ['as' => 'pages.icons', 'uses' => 'App\Http\Controllers\PageController@icons']);
 		Route::get('maps', ['as' => 'pages.maps', 'uses' => 'App\Http\Controllers\PageController@maps']);
 		Route::get('notifications', ['as' => 'pages.notifications', 'uses' => 'App\Http\Controllers\PageController@notifications']);

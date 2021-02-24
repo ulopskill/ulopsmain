@@ -14,7 +14,7 @@
             </li>
            
             <li @if ($pageSlug == 'icons') class="active " @endif>
-                <a href="#">
+                <a href="/classes">
                     <i class="tim-icons icon-atom"></i>
                     <p>Access Class</p>
                 </a>

@@ -1,6 +1,19 @@
 @extends('layouts.app', ['page' => __('User Profile'), 'pageSlug' => 'profile'])
 
 @section('content')
+
+
+<style type="text/css">
+    
+
+.fixed-plugin {
+
+display:none;
+}
+
+</style>
+
+
     <div class="row">
         <div class="col-md-8">
             <div class="card">
@@ -78,7 +91,7 @@
                                 <img class="avatar" src="{{ asset('white') }}/img/emilyz.jpg" alt="">
                                 <h5 class="title">{{ auth()->user()->name }}</h5>
                             </a>
-                            <p class="description">
+                            <p class="description d-none">
                                 {{ _('Ceo/Co-Founder') }}
                             </p>
                         </div>

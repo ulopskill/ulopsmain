@@ -25,14 +25,7 @@
 
   
   <link href="assets/css/style.css" rel="stylesheet">
-<style>
 
-.category_image {
-    max-width: 100%;
-    height: 200px;
-}
-
-</style>
  
 </head>
 
@@ -49,8 +42,8 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/tutor_register">Tutors</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/register">Tutors</a></li>
           <li><a href="/login">Login</a></li>
         
            
@@ -65,59 +58,25 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center py-5 my-5">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Unlimited Learning Opportunities</h1>
-          <h2>ULOPS provides you with the comfort of learning anything, whereever you may be</h2>
-          <div class="d-flex">
-            <a href="login" class="btn-get-started scrollto">Get Started</a>
-            
-          </div>
-          <br/>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-imgx">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
+  
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services mt-5">
-      <div class="container">
+  <br/><br/><br/><br/><br/>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-computer"></i></div>
-              <h4 class="title"><a href="">Device Access</a></h4>
-              <p class="description">Access courses on all devices. Course content can be consumed anywhere you desire</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-image"></i></div>
-              <h4 class="title"><a href="">Compelling Content</a></h4>
-              <p class="description">Access courses on all devices. Course content can be consumed anywhere you desire</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
-              <h4 class="title"><a href="">Schedule your courses</a></h4>
-              <p class="description">Access courses on all devices. Course content can be consumed anywhere you desire</p>
-            </div>
-          </div>
-        </div>
+  <div class=" pt-4 pt-lg-0 container">
+            <h3>About ULOPS</h3>
+<p>ULOPS provides unlimited flexible, interactive and affordable learning opportunities to individuals and organisations. We assist the students to develop the relevant skills they need to succeed either as an entrepreneur or in the job market.We are bridging the gap between theoretical learning in our school system and practical experience required to develop our community.Our curriculum and delivery method are tailored to the cultural, social and educational dynamics of the African student.  
+Our strategic partnership with recruiting firms and success gives credence to our being one of the leading companies in Skill development</p>
 
-      </div>
-    </section><!-- End Featured Services Section -->
+
+
+</div>
+
+
+
+
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -190,12 +149,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-
-              <div class="icon">
-              <img src="/tailoring.jpeg" class="category_image" />
-              
-              </div>
-
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="">Tailoring</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -203,10 +157,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/coding.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-file"></i></div>
               <h4><a href="">Coding</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -214,10 +165,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/graphics.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4><a href="">Graphic Design</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -225,10 +173,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/animation.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Animation</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -236,10 +181,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/film.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
               <h4><a href="">Film Making</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -247,10 +189,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/film.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-arch"></i></div>
               <h4><a href="">Music</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -259,10 +198,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/script.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-arch"></i></div>
               <h4><a href="">Script Writing</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -272,10 +208,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/public.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-arch"></i></div>
               <h4><a href="">Public Speaking</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>
@@ -285,10 +218,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-            <div class="icon">
-              <img src="/3dprinting.jpeg" class="category_image" />
-              
-              </div>
+              <div class="icon"><i class="bx bx-arch"></i></div>
               <h4><a href="">3D Printing</a></h4>
               <p>ULOPS helps you unlock the world of unlimited learning everywhere you go</p>
             </div>

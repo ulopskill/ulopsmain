@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -46,6 +47,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -53,6 +55,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'agree_terms_and_conditions' => ['required'],
+             // 'user_type' => ['string'],
         ]);
     }
 
@@ -68,6 +71,49 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+             'user_type' => 'user',
         ]);
     }
+
+
+    protected function tutor_create(Request $request)
+    {
+
+
+  $validated = $request->validate([
+        'email' => 'required|unique:users|max:255',
+        'name' => 'required',
+        'password' => 'required',
+    ]);
+
+
+
+         User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+             'user_type' => 'tutor',
+        ]);
+
+        return redirect('/');
+    }
+
+
+
+
+
+
+
+
+   public function tutor_reg_index()
+    {
+        return view('auth.tutoregister');
+    }
+
+
+
+
+
+
+
 }

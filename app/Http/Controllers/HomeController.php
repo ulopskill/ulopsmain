@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -23,4 +24,26 @@ class HomeController extends Controller
     {
         return view('dashboard');
     }
+
+
+
+
+
+    public function payments()
+    {
+        return view('payments');
+    }
+
+
+
+
+
+
+
+  public function classes()
+    {
+        return view('classes');
+    }
+
+
 }
